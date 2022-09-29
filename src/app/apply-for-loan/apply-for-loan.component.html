@@ -1,0 +1,137 @@
+<div class="a">
+
+        <h1 class="title">Esteem Bank</h1>
+        <p class="formname"> Loan Application Form</p>
+
+
+        <hr>
+
+        <div class="personal-details">
+            <h4>Personal Details</h4>
+            <form>
+                <label>First Name :</label>
+                <input type="text"[formControl]="firstname" required="" >
+
+                <br>
+                <label>Last Name :</label>
+                <input type="text" [formControl]="lastname" required="">
+                <br>
+
+                <p>Please select Gender:</p>
+                <input type="radio"   [formControl]="gender" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" [formControl]="gender"  name="gender" value="Female">
+                <label for="female">Female</label><br>
+
+                <label>Date Of Birth :</label>
+                <input type="date" [formControl]="dateofbirth" required="">
+                <br/>
+
+                <label>Email :</label>
+                <input type="text" [formControl]="email" required="">
+                <br/>
+
+                <label>Address</label>
+                <input type="text" [formControl]="address" required="">
+                <br>
+                <label>Phoneno :</label>
+                <input type="text" [formControl]="phoneno" required="">
+                <br/>
+
+
+            <label>Account No:</label>
+            <input type="text" [formControl]="account" required="" >
+            <br>
+            <!-- <label>Loan Type:</label>
+            <input type="text" [formControl]="loantype" required="" >
+
+
+
+            </form>
+        </div>
+
+        <hr>
+
+        <div class="address">
+
+            <h4>Address</h4>
+
+            <label>Area</label>
+            <input type="text">
+            <br>
+
+            <label>Street</label>
+            <input type="text">
+            <br>
+
+            <label>PinCode</label>
+            <input type="text">
+            <br>
+
+            <label>Country</label>
+
+            <select>
+
+                <option>
+                    India
+                </option>
+                <option>Singapore</option>
+                <option>Japan</option>
+                <option>America</option>
+            </select>
+
+
+        </div>
+        <hr>
+
+        <div class="loan-details">
+            <label>Loan Amount :</label>
+            <input type="text">
+            <br>
+
+            <label>Account No :</label>
+            <input type="text">
+            <br>
+
+            <label>IFSC Code :</label>
+            <input type="text">
+            <br>
+
+            <label>Type of account</label>
+
+            <input type="radio" name="type-acc">SAVINGS
+
+            <input type="radio" name="type-acc">CURRENT
+
+            <br>
+
+            <label>Credit type</label>
+
+            <input type="checkbox">CASH
+            <input type="checkbox">CHEQUE
+
+            <br>
+
+            <label>Tenure</label>
+
+            <select>
+
+                <option>6 Months</option>
+                <option>12 Months</option>
+                <option>18 Months</option>
+                <option>24 Months</option>
+
+            </select>
+
+            <p class="sign">Signature</p>
+
+            <hr> -->
+
+            <button type="button" (click)="save()" >Submit</button> <br/> <br/> <a  routerLink="/Loan-list" >Loan List</a>
+            <h1 class="title">Thank You</h1>
+
+
+
+
+
+

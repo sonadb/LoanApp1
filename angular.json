@@ -23,9 +23,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
-            ],
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/flexboxgrid/dist/flexboxgrid.min.css"
+              ],
+
             "scripts": []
+
           },
           "configurations": {
             "production": {
@@ -90,6 +93,7 @@
               "src/assets"
             ],
             "styles": [
+
               "src/styles.css"
             ],
             "scripts": []
@@ -97,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "3f66ea1d-72d3-4c40-af3b-d3a41701447b"
   }
 }

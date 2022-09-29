@@ -1,0 +1,30 @@
+.title {
+  text-align: center;
+  text-decoration: underline;
+}
+.formname {
+  text-align: center;
+}
+.bad {
+  text-align: right;
+}
+input {
+  margin-top: 10px;
+}
+label {
+  margin-top: 10px;
+}
+select {
+  margin-top: 10px;
+}
+.sign {
+  text-align: right;
+}
+
+.a{
+  text-align: center;
+  background-color: blanchedalmond;
+}
+.btn login{
+  text-align: center;
+}

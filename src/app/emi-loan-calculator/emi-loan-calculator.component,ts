@@ -1,0 +1,10 @@
+import { Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'emi-loan-calculator.component.html',
+  template: 'emi-loan-calculator.component.css',
+  styles: [`h1 { font-family: Lato; }`]
+})
+export class EMILOANCALCULATORCOMPONENT  {
+  @Input() name: string;
+}

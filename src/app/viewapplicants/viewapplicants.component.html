@@ -1,0 +1,110 @@
+<div class="page-header">
+  <div class="container">
+    <h1>Applicant Form</h1>
+  </div>
+</div>
+<div class="container">
+  <div class="row top-row">
+    <div class="col-xs-12 row end-xs">
+      <a routerLink="/applicants" color="primary" mat-raised-button>
+        <mat-icon></mat-icon>
+        Go Back
+      </a>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-6">
+    <!-- Applicant Details -->
+    <form #applicantDetailsForm="ngForm">
+      <div class="row">
+        <div class="col-xs-6">
+          <mat-form-field appearance="outline">
+            <!-- <mat-label>First Name</mat-label> -->
+             <input type="text" matInput placeholder="Firstname" [(ngModel)]="applicant.firstName" name="firstName" required>
+             <!-- <mat-error>'First Name is required field'</mat-error> -->
+          </mat-form-field>
+        </div>
+        <div class="col-xs-6">
+          <mat-form-field appearance="outline">
+            <!-- <mat-label>Last Name</mat-label> -->
+            <input type="text" matInput placeholder="Lastname" [(ngModel)]="applicant.lastName" name="lastName" required>
+            <!-- <mat-error>'Last Name is required field'</mat-error> -->
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <mat-form-field appearance="outline">
+            <!-- <mat-label>Date Of Birth</mat-label> -->
+            <input matInput placeholder="DOB" [(ngModel)]="applicant.dateOfBirth" name="dateOfBirth" required>
+            <!-- <mat-error>'DateOfBirth is required field'</mat-error> -->
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <mat-form-field appearance="outline">
+            <!-- <mat-label>Email</mat-label> -->
+            <input type="text" matInput placeholder="Email" [(ngModel)]="applicant.email" name="email" required>
+            <!-- <mat-error>'Email is required field'</mat-error> -->
+          </mat-form-field>
+        </div>
+        <div class="col-xs-6">
+          <mat-form-field appearance="outline">
+            <!-- <mat-label>Phone Number</mat-label> -->
+            <input type="number" matInput placeholder="PhoneNo" [(ngModel)]="applicant.phoneNumber" name="phoneNumber" reqired>
+            <!-- <mat-error>'PhoneNumber is required field'</mat-error> -->
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+        <mat-form-field appearance="outline">
+          <!-- <mat-label>Gender</mat-label> -->
+          <input type="text" matInput placeholder="Gender" [(ngModel)]="applicant.gender" name="gender" required>
+          <!-- <mat-error>'Gender is required field'</mat-error> -->
+        </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+        <mat-form-field appearance="outline">
+          <!-- <mat-label>Address</mat-label> -->
+          <textarea matInput placeholder="Address" [(ngModel)]="applicant.address" name="address" required>
+            <!-- <mat-error>'Address is required field'</mat-error> -->
+          </textarea>
+        </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="row between-xs" *ngIf="!isNewApplicant">
+            <button mat-raised-button color="primary" (click)="onUpdate()">Update</button>
+            <button mat-raised-button color="warn" (click)="onDelete()">Delete</button>
+          </div>
+
+          <div class="row between-xs" *ngIf="isNewApplicant">
+            <button mat-raised-button color="primary" (click)="onAdd()">Add</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    </div>
+    <div class="col-xs-6">
+      <div class="row center-xs">
+        <div class="image-container">
+          <img [src]="displayProfileImageUrl" alt="Profile Image">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 row center-xs mt-1">
+          <input hidden type="file" #imageUpload (change)="uploadProfile($event)">
+          <button mat-raised-button color="primary" (click)="profileUpload">Change Profile</button>
+        </div>
+      </div>
+  </div>
+</div>
+

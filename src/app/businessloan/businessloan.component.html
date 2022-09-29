@@ -1,0 +1,80 @@
+
+
+<div class="regform"><h1>Business LOAN FORM</h1>
+</div>
+<div class="main">
+<form>
+<br>
+<br>
+<br>
+
+<h2 class="name">Name*</h2>
+<input class="email"  [formControl]="name" required=""  type="text" name="full_name" placeholder="Full Name">
+
+
+<br>
+<h2 class="name">Email*</h2>
+<input class="email"  [formControl]="email" required=""  type="text" name="email" placeholder="Email">
+
+
+<h2 class="name">Phone Number*</h2>
+<!-- <input class="code" type="text" name="area_code" placeholder="Area Code">
+<label class="area_code">Area Code</label> -->
+<input class="number"  [formControl]="phoneno" required="" type="text" name="phone" placeholder="Phone Number">
+<!-- <label class="phone_number">Phone Number</label> -->
+
+<h2 class="name"> Address*</h2>
+<input class="email"   [formControl]="address" required="" type="text" name="address" placeholder="Address">
+
+<!-- <h2 class="name">How long have you lived in your given address?*</h2>
+<input type="radio" name="0-1 year" value="0-1 year">0-1year<br>
+<input type="radio" name="1-2 year" value="1-2 year">0-1 year<br>
+<input type="radio" name="3-4 year" value="3-4 year">0-1 year<br>
+<input type="radio" name="5+ year" value="5+ year">5+ year<br> -->
+
+
+<h2 class="name">Date of Birth</h2>
+<input type="date"  [formControl]="dateofbirth" required=""  id="send" oninput="result.value = send.value">
+<br>
+
+<!-- <h2 class="name">Marital Status</h2>
+<input type="radio" name="Marital Status" value="single">Single<br>
+<input type="radio" name="Marital Status" value="married">Married<br>
+<input type="radio" name="Marital Status" value="other">Other<br>
+<h2 class="name">Select Employment Type*</h2>
+<select class="option" name="select employment type" placeholder="Select Employment Type">
+<option salaried="salaried" selected="selected">choose option</option><br>
+<option>Salaried</option>
+<option>Self Employed</option><br>
+       </select> -->
+
+<h2 class="name">Gross monthly Income*</h2>
+<input class="email"   [formControl]="grossmonthlyincome" required="" type="text" name="gross monthly income" placeholder="eg.15000">
+<br>
+
+<h2 class="name">Down payment amount*</h2>
+<input class="email"   [formControl]="name" downpaymentamount="" type="text" name="Down payment amount">
+<br>
+
+<h2 class="name">Comment</h2>
+<input class="email" type="text" name="Comment">
+<br>
+<p>
+I authorize prospective Credit Grantors/Lending/Leasing Companies to obtain personal and credit information about me from my employer and credit bureau, or credit reporting agency, any person who has or may have any financial dealing with me, or from any references I have provided. This information, as well as that provided by me in the application, will be referred to in connection with this lease and any other relationships we may establish from time to time. Any personal and credit information obtained may be disclosed from time to time to other lenders, credit bureaus or other credit reporting agencies.<br>
+<input type="checkbox" value="Yes">
+</p>
+<label for="agree">I hereby agree that the information given is true, accurate and complete as of the date of this application submission.</label><br>
+<input type="checkbox" value="Yes">
+<br>
+<!-- <button routerLink="/businessloaneligibility">Submit</button> -->
+<button type="button" (click)="save()" >Submit</button> <br/> <br/> <a  routerLink="/businessloaneligibility">Businessloaneligibility</a>
+<br>
+<a href="businessloaneligibility"></a>
+</form>
+
+
+
+
+
+
+

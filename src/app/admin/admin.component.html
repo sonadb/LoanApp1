@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building dashboard with gird and flex</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="menu-icon">
+        <strong> &#9776;</strong>
+      </div>
+      <header class="header">
+        <div class="header_search">Search...</div>
+        <div class="btncontainer" id="go-back"> <!--Go Back Button has started-->
+
+          <button class="btn btn-info float-end" id="button" type="submit"
+
+          [routerLink]="['/applicantslist']"
+
+          routerLinkActive="router-link-active">Edit</button>
+
+        </div> <!--Go Back Button has ended-->
+        <a href="/home">Logout</a>
+      </header>
+      <aside class="aside">
+        <div class="aside_close-icon">
+          <strong>&times;</strong>
+        </div>
+        <ul class="aside_list">
+           <li><a href="adminlogin" style="margin:40px; color: aliceblue;">My Account</a></li><br>
+          <!-- <a  href="login">Click Here</a> -->
+          <!-- <button class="btn btn-danger btn-lg"><li><a  href="login">Click Here</a></li></button> -->
+          <li><a href="userlist" style="margin:40px; color: aliceblue;">View Application</a></li>
+          <br>
+          <li><a href="Loan-list" style="margin:40px; color: aliceblue;">List of Loans</a></li>
+           <br>
+           <li><a href="login" style="margin:40px; color: aliceblue;">Interest Rate</a></li>
+          <br>
+          <li><a href="login" style="margin:40px; color: aliceblue;">EligibilityCriteria</a></li>
+          <br>
+          <li><a href="login" style="margin:40px; color: aliceblue;">Help</a></li>
+
+        </ul>
+      </aside>
+      <main class="main">
+        <div class="main_overview">
+          <div class="overview_card">
+            <div class="overview_card-info"></div>
+            <!-- <div class="overview_card-icon">View loan</div> -->
+            <img src="../../assets/Images/viewloan2.jpg" width="130px height=100px">
+          <a href="/login">View Loan</a>
+             <div class="card-body"></div>
+
+          </div>
+          <div class="overview_card">
+            <div class="overview_card-info"></div>
+            <!-- <div class="overview_card-icon">List of Loans</div> -->
+            <img src="../../assets/Images/loan details.jpg" width="130px height=100px">
+            <a href="Loan-list">List of Loans</a>
+          </div>
+          <div class="overview_card">
+            <div class="overview_card-info"></div>
+            <!-- <div class="overview_card-icon">Interest Rate</div> -->
+            <img src="../../assets/Images/interest rate.jpg" width="130px height=100px">
+            <a href="/login">Interest Rate</a>
+          </div>
+          <div class="overview_card">
+            <div class="overview_card-info"></div>
+            <!-- <div class="overview_card-icon">Eligibility Criteria</div> -->
+            <img src="../../assets/Images/eligibility.jpg" width="130px height=100px">
+            <a href="/login">Eligibility Criteria</a>
+          </div>
+          <div class="overview_card">
+            <div class="overview_card-info"></div>
+            <!-- <div class="overview_card-icon">Help</div> -->
+            <img src="../../assets/Images/help.jpg" width="130px height=100px">
+            <a href="/login">Help</a>
+
+          </div>
+        </div>
+
+
